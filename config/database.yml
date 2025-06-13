@@ -19,10 +19,6 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b468fbb (rails new)
 development:
   <<: *default
   database: rails_watch_list_development
@@ -82,12 +78,6 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-<<<<<<< HEAD
-  <<: *default
-  database: rails_watch_list_production
-  username: rails_watch_list
-  password: <%= ENV["RAILS_WATCH_LIST_DATABASE_PASSWORD"] %>
-=======
   primary: &primary_production
     <<: *default
     database: rails_watch_list_production
@@ -105,4 +95,3 @@ production:
     <<: *primary_production
     database: rails_watch_list_production_cable
     migrations_paths: db/cable_migrate
->>>>>>> b468fbb (rails new)
