@@ -2,6 +2,10 @@ source "https://rubygems.org"
 
 ruby "3.3.5"
 
+# Gems standard devenus optionnels en Ruby 3.3+
+gem 'ostruct'
+gem 'prettyprint'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5", ">= 7.1.5.1"
 
@@ -46,7 +50,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ]
+  # gem "debug", platforms: %i[ mri windows ]
 end
 
 group :development do
@@ -63,7 +67,7 @@ end
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 
-gem "bootstrap", "~> 5.2"          
+gem "bootstrap", "~> 5.2"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
