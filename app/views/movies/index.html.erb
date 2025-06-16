@@ -2,5 +2,10 @@
   <h1 class="text-primary">Bienvenue sur ma Watch List 🎬</h1>
   <p class="lead">Ceci est ma première app Rails.</p>
 
-  <a class="btn btn-success" href="#">Ajouter un film</a>
-</div>
+  <% @movies.each do |movie| %>
+    <ul>
+      <li><%= link_to movie.title, movie_path(movie) %></li>
+    </ul>
+  <%end%>
+
+<%= link_to "Ajouter un film", new_movie_path(@movie), class: "btn btn-success" %>
