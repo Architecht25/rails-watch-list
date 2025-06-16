@@ -1,0 +1,14 @@
+<h1><%= @list.name %></h1>
+
+<ul>
+  <% @list.bookmarks.each do |bookmark| %>
+    <li>
+      🎬 <strong><%= bookmark.movie.title %></strong> — "<%= bookmark.comment %>"
+     <%= link_to "Supprimer", bookmark_path(bookmark), method: :delete, data: { turbo_confirm: "Es-tu sûr ?" }, class: "btn btn-sm btn-danger" %>
+
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "➕ Ajouter un film", new_list_bookmark_path(@list), class: "btn btn-success mt-3" %>
+<%= link_to "⬅️ Retour aux listes", lists_path, class: "btn btn-secondary mt-2" %>
