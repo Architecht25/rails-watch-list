@@ -322,11 +322,6 @@ GEM
     simple_form (5.3.1)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
-    solid_cable (3.0.8)
-      actioncable (>= 7.2)
-      activejob (>= 7.2)
-      activerecord (>= 7.2)
-      railties (>= 7.2)
     solid_cache (1.0.7)
       activejob (>= 7.2)
       activerecord (>= 7.2)
@@ -416,7 +411,6 @@ DEPENDENCIES
   rubocop-rails-omakase
   sassc-rails
   simple_form
-  solid_cable
   solid_cache
   solid_queue
   sprockets-rails
