@@ -4,10 +4,12 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
     <% @lists.each do |list| %>
       <div class="col">
-        <div class="card h-100 shadow-sm list-card">
+        <div class="card shadow-sm list-card">
           <div class="card-body text-center">
             <h5 class="card-title"><%= list.name %></h5>
             <%= link_to "Voir la liste", list_path(list), class: "btn btn-outline-primary mt-2" %>
+            <% filename = "#{list.name.parameterize}.jpg" %>
+            <%= image_tag(filename, class: "card-img-top", alt: list.name) if asset_path(filename) rescue nil %>
           </div>
         </div>
       </div>
