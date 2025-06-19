@@ -7,3 +7,36 @@
   text-align: center;
   padding: 2rem;
 }
+
+.container-new-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.new-list-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+.container-list-index {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.list-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  background-color: #fdfdfd;
+}
+
+.list-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
