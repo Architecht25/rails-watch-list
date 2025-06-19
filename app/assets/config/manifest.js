@@ -6,5 +6,5 @@
 //= link controllers/application.js
 //= link controllers/hello_controller.js
 //= link controllers/index.js
-//= link action.jpg
+  //= link action.jpg
 //= link romance.jpg
