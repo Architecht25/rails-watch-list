@@ -4,6 +4,8 @@
   <% @lists.each do |list| %>
     <li>
       <%= link_to list.name, list_path(list) %>
+
+      <%= link_to "Supprimer", list_path(list), method: :delete, data: { confirm: "Tu es sûr ?" } %>
     </li>
   <% end %>
 </ul>

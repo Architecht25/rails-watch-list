@@ -1,8 +1,13 @@
-import "@hotwired/turbo-rails"
-import "bootstrap"
-import "@popperjs/core"
-import "controllers"
-import Rails from "@rails/ujs"
+// application.js
+
+import * as Rails from "@rails/ujs"
 Rails.start()
 
-console.log("📦 application.js chargé !");
+import "@hotwired/turbo-rails"
+import "controllers"
+
+console.log("📦 application.js chargé !")
+
+// ⚠️ Assure-toi que bootstrap est bien piné dans config/importmap.rb si tu l’utilises via importmap :
+import "bootstrap"
+import "@popperjs/core"

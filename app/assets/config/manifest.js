@@ -5,4 +5,3 @@
 //= link controllers/index.js
 //= link application.js
 //= link application.css
-//= link rails-ujs.js
