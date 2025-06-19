@@ -316,10 +316,6 @@ GEM
     simple_form (5.3.1)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
-    solid_cache (1.0.7)
-      activejob (>= 7.2)
-      activerecord (>= 7.2)
-      railties (>= 7.2)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
       logger
@@ -398,7 +394,6 @@ DEPENDENCIES
   rubocop-rails-omakase
   sassc-rails
   simple_form
-  solid_cache
   sprockets-rails
   stimulus-rails
   thruster
