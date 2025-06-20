@@ -66,3 +66,4 @@ gem "simple_form"
 gem "sassc-rails"
 gem 'sprockets-rails'
 gem "dotenv-rails"
+gem "cloudinary"
